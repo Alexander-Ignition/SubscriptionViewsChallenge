@@ -31,6 +31,7 @@ struct ContentView: View {
                     )
                 }
             }
+            .fixedSize(horizontal: false, vertical: true)
             Spacer()
         }
         .padding()
@@ -41,5 +42,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .previewLayout(.fixed(width: 300, height: 300))
     }
 }

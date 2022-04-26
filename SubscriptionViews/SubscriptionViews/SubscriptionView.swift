@@ -18,6 +18,7 @@ struct SubscriptionInfoView: View {
                     .font(Font.system(size: 15, weight: .semibold, design: .default))
                     .padding(.horizontal, 8)
                     .multilineTextAlignment(.center)
+                    .frame(maxHeight: .infinity)
 
                 Rectangle().fill(dividerColor).frame(height: 1, alignment: .center)
 
@@ -25,6 +26,7 @@ struct SubscriptionInfoView: View {
                     .padding(.horizontal, 8)
                     .font(Font.system(size: 15, weight: .semibold, design: .default))
                     .multilineTextAlignment(.center)
+                    .frame(maxHeight: .infinity)
             }
             .foregroundColor(.white)
             .padding(.vertical, 12)
